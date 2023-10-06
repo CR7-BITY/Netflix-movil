@@ -1,0 +1,51 @@
+body{
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.titulo{
+    font-size: 1.1rem;
+}
+.titulo1{
+    font-weight: 600;
+}
+.gato, .mujer, .avatar3, .avatar4, .avatar5{
+    width: 7rem;
+}
+.caja{
+    margin-top: 5rem;
+}
+.nombre1{
+    padding-right: 1.5rem;
+    font-size: 1.1rem;
+}
+.nombre2{
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.caja-2{
+    margin-top: 3rem;
+}
+.nombre3{
+    padding-right: 2.2rem;
+    font-size: 1.1rem;
+}
+.nombre4{
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.caja-3{
+    margin-top: 3rem;
+}
+.nombre5{
+    font-size: 1.1rem;
+}
+
+.caja-4{
+    margin-top: 2.5rem;
+}
+.text{
+    color: #ed1206;
+    font-size: 1.3rem;
+}

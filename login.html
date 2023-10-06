@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+</head>
+
+<body>
+
+    <div class="d-flex justific-content-center align-items-center bg-black vh-100">
+        <div class="row padre flex-column container-fluid align-items-center">
+            <div class="row bienvenido text-center">
+                <h1 class="mt-5 p-0 titulo">Welcome</h1>
+            </div>
+            <div class="col-7 text-center">
+                <img src="./imagenes/netflix(1) 2.png" class="net img-fluid" alt="">
+            </div>
+            <div class="col">
+                <p class="text-1 texto-2 p-0 text-center">Let’s get you started.</p>
+            </div>
+            <form action="">
+                <div class="col caja d-flex flex-column gap-2 mt-3 p-0">
+                    <input type="text" placeholder="Enter your name" class="name" required>
+                    <input type="email" placeholder="Enter your email" id="email" required>
+                    <input type="password" placeholder="Enter your password" class="pass" required>
+                </div>
+                <div class="row fila1 p-0 registro">
+                    <div class="col d-flex flex-column align-items-center p-0">
+                        <button type="submit" class="bot mb-3">Register</button>
+                        <p class="register">Already have an account? <a class="enlace1" href="#">Sign in</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        const myPopup = new Popup({
+            id: "my-popup",
+            title: "Sign in",
+            content: `
+        `,
+        });
+
+        const input1 = document.querySelector(".name")
+        let input2 = document.querySelector("#email")
+        let input3 = document.querySelector(".pass")
+        let boton = document.querySelector(".bot")
+
+        boton.addEventListener("click",
+            function () {
+                if ((input1.value == null || input1.value == "") || (input2.value == null || input2.value == "")
+                    || (input3.value == null || input3.value == "")) {
+                    alert("Tienes que digitar los datos obligatorios")
+                } else {
+                    alert("Se guardó")
+                }
+                localStorage.setItem("name", input1.value)
+                localStorage.setItem("email", input2.value)
+                localStorage.setItem("pass", input3.value)
+            }
+        )
+
+
+    </script>
+</body>
+
+</html>

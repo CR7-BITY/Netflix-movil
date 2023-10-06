@@ -1,0 +1,135 @@
+body{
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container-fluid{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.net{
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+    animation-delay: 1s;
+}
+    @keyframes slide-right {
+        0% {
+            transform: translateX(-400px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+
+.bienvenido, .texto-2{
+    visibility: hidden;
+    animation: slide-top 1s forwards;
+    animation-delay: 2s;
+}
+@keyframes slide-top {
+    0%{
+        transform: translateY(-200px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+
+    }
+}
+form{
+    visibility: hidden;
+    animation: slide-form 1s forwards;
+    animation-delay: 3s;
+}
+@keyframes slide-form {
+    0%{
+        transform: translateY(-30px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+
+.registro{
+    visibility: hidden;
+    animation: slide-reg 1s forwards;
+    animation-delay: 3s;
+}
+@keyframes slide-reg {
+    0%{
+        transform: translateY(-20px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+
+.titulo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    font-family: poppins;
+}
+.netflix{
+    width: 280px;
+}
+.text-1{
+    color: #D42F26;
+    visibility: hidden;
+    animation: slide-tex 2s forwards;
+    animation-delay: 2.1s;
+}
+@keyframes slide-tex {
+    0%{
+        transform: translateY(-20px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0px);
+        visibility: visible;
+    }
+}
+
+.caja{
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    overflow-x: hidden;
+}
+.name, .pass, #email{
+    border-radius: 0.7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.fila1{
+    margin-top: 5.5rem;
+    overflow-x: hidden;
+}
+.bot{
+    width: 17rem;
+    background: #ed1206;
+    color: white;
+    border: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.register{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+}
+.enlace1{
+    color: #ed1206;
+}
+
+.caja5{
+    overflow-x: hidden;
+}
